@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   const [computerWeapon, setComputerWeapon] = useState("");
   const [userWeapon, setUserWeapon] = useState("");
-  const [whoWon, setWhoWon] = useState("");
+  const [whoWon, setWhoWon] = useState("Choose Your Weapon");
 
   useEffect(() => {
     if (userWeapon && computerWeapon) {
