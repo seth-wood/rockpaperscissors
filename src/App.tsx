@@ -17,7 +17,7 @@ function App() {
       } else if (userWeapon === computerWeapon) {
         setWhoWon("It's a tie!");
       } else {
-        setWhoWon("You Lose!");
+        setWhoWon("You lose!");
       }
     }
   }, [userWeapon, computerWeapon]);
