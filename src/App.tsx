@@ -30,15 +30,10 @@ function App() {
   }
 
   function generateComputerWeapon() {
-    const randomNumber = Math.floor(Math.random() * 3 + 1);
-    if (randomNumber === 1) {
-      setComputerWeapon("Paper");
-    } else if (randomNumber === 2) {
-      setComputerWeapon("Rock");
-    } else {
-      setComputerWeapon("Scissors");
-    }
-    return randomNumber;
+    const weapons: string[] = ["Paper", "Rock", "Scissors"];
+    const randomNumber: number = Math.floor(Math.random() * 3);
+
+    setComputerWeapon(weapons[randomNumber]);
   }
 
   return (
